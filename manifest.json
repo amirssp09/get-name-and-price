@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "اسکریپت استخراج محصول",
+    "version": "1.0",
+    "description": "استخراج اسم و قیمت محصولات از دیجی‌کالا و نمایش در کنسول",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["*://www.digikala.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["*://www.digikala.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
